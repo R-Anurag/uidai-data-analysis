@@ -180,6 +180,17 @@ else:
         # Find selected section
         section = next(s for s in sections if s['heading'] == selected_section)
         
+        # Plot selector
+        if section['plots']:
+            # Render selected plot
+            st.markdown("### 📈 Visualization")
+            render_plot(section['plots'][0])
+            
+            # Display description
+            st.markdown("### 📝 Description")
+            st.markdown(section['text'])
+        else:
+            st.info("No plots available in this section.")
 
 # Footer
 st.markdown("---")
