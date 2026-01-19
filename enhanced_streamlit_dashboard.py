@@ -23,7 +23,7 @@ NOTEBOOK_MAP = {
         "analyst": "Paras",
         "description": "Analyzes biometric capture failures across different demographics, geographic regions, and time periods. Identifies patterns in authentication failures and equipment-related issues to improve enrollment success rates."
     },
-    "Resource_Allocation_Optimization.ipynb": {
+    "Resource_Allocation_Optimization_with_descriptions.ipynb": {
         "name": "📈 Resource Allocation Optimization", 
         "analyst": "Sriyansh Sharma",
         "description": "Optimizes resource distribution by analyzing enrollment demand patterns across states and districts. Provides insights into population distribution, monthly enrollment rates, and seasonal trends to guide infrastructure planning."
@@ -38,7 +38,7 @@ NOTEBOOK_MAP = {
         "analyst": "Shivansh Bhageria",
         "description": "Compares Aadhaar enrollment patterns between rural and urban areas to understand the digital divide. Analyzes demographic trends, biometric authentication rates, and time-series patterns to assess adoption disparities."
     },
-    "district_anomaly_detection.ipynb": {
+    "district_anomaly_detection_with_descriptions.ipynb": {
         "name": "📍 District-level Hotspots", 
         "analyst": "Kartikeya Gupta",
         "description": "Identifies geographic hotspots with unusual enrollment patterns at the district level. Detects anomalies in enrollment ratios and provides descriptive statistics to highlight areas requiring policy intervention."
@@ -207,6 +207,7 @@ st.sidebar.markdown("""
 - **Paras** - Biometric Failure Analysis
 - **Sriyansh Sharma** - Resource Allocation
 - **Anurag Rai** - Fraud Detection
+- **Shivansh Bhageria** - Rural/Urban Analysis
 - **Shivansh Bhageria** - Rural/Urban Analysis
 - **Kartikeya Gupta** - District Hotspots
 """)
