@@ -182,13 +182,9 @@ else:
         
         # Plot selector
         if section['plots']:
-            plot_options = [f"Plot {i+1}" for i in range(len(section['plots']))]
-            selected_plot = st.selectbox("📊 Select Visualization:", plot_options)
-            plot_idx = plot_options.index(selected_plot)
-            
             # Render selected plot
             st.markdown("### 📈 Visualization")
-            render_plot(section['plots'][plot_idx])
+            render_plot(section['plots'][0])
             
             # Display description
             st.markdown("### 📝 Description")
