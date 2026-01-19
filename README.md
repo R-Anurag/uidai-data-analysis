@@ -15,31 +15,13 @@ Comprehensive analytics dashboard for UIDAI enrollment data with automatic Jupyt
 
 ```bash
 # Navigate to project directory
-cd /Users/paras/Desktop/Developer/uidai
+cd /path_to_your_repo/uidai
 
 # Run dashboard (notebooks auto-detected!)
-streamlit run enhanced_streamlit_dashboard.py
+streamlit run app/dashboard.py
 ```
 
 Dashboard opens at: `http://localhost:8501`
-
-##  Project Structure
-
-```
-uidai/
-├── data/
-│   ├── biometric.csv
-│   ├── demographic.csv
-│   └── enrollment.csv
-├── biometric_failure_analysis.ipynb
-├── Resource_Allocation_Optimization.ipynb
-├── fraud_detection_analysis.ipynb
-├── Rural_Urban_Adoption_Analysis.ipynb
-├── district_anomaly_detection.ipynb
-├── enhanced_streamlit_dashboard.py 
-├── biometric_analysis_enhanced.py
-└── README.md
-```
 
 ##  Team Members
 
@@ -130,7 +112,7 @@ streamlit run enhanced_streamlit_dashboard.py
 
 ##  Notes
 
-- Place all `.ipynb` files in the base directory
+- Place all `.ipynb` files in the analysys_notebooks directory
 - Dashboard automatically detects and loads them
 - Only sections with plots are displayed
 - Descriptions follow each visualization
