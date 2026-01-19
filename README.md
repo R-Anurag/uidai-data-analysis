@@ -48,7 +48,7 @@ uidai/
 | **Paras** | Biometric Failure Analysis |
 | **Sriyansh Sharma** | Resource Allocation Optimization |
 | **Anurag Rai** | Fraud Detection |
-| **Shivansh Bhagja** | Rural vs Urban Adoption |
+| **Shivansh Bhageria** | Rural vs Urban Adoption |
 | **Kartikeya Gupta** | District-level Hotspots |
 
 ## 📊 Analysis Features

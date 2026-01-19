@@ -19,7 +19,7 @@ NOTEBOOK_MAP = {
     "biometric_failure_analysis.ipynb": {"name": "🔍 Biometric Failure Analysis", "analyst": "Paras"},
     "Resource_Allocation_Optimization.ipynb": {"name": "📈 Resource Allocation Optimization", "analyst": "Sriyansh Sharma"},
     "fraud_detection_analysis.ipynb": {"name": "🚨 Fraud Detection", "analyst": "Anurag Rai"},
-    "Rural_Urban_Adoption_Analysis.ipynb": {"name": "🏘️ Rural vs Urban Adoption", "analyst": "Shivansh Bhagja"},
+    "Rural_Urban_Adoption_Analysis.ipynb": {"name": "🏘️ Rural vs Urban Adoption", "analyst": "Shivansh Bhageria"},
     "district_anomaly_detection.ipynb": {"name": "📍 District-level Hotspots", "analyst": "Kartikeya Gupta"}
 }
 
@@ -167,7 +167,7 @@ st.sidebar.markdown("""
 - **Paras** - Biometric Failure Analysis
 - **Sriyansh Sharma** - Resource Allocation
 - **Anurag Rai** - Fraud Detection
-- **Shivansh Bhagja** - Rural/Urban Analysis
+- **Shivansh Bhageria** - Rural/Urban Analysis
 - **Kartikeya Gupta** - District Hotspots
 """)
 
