@@ -1,17 +1,17 @@
 # UIDAI Analytics Dashboard
 
-## 📊 Overview
+##  Overview
 Comprehensive analytics dashboard for UIDAI enrollment data with automatic Jupyter notebook integration.
 
-## ✨ Key Features
+##  Key Features
 
-- **🔍 Auto-Detection**: Automatically finds and loads all notebooks from base directory
-- **📊 Smart Rendering**: Only displays sections containing visualizations
-- **🎯 Plot Selection**: Dropdown to select specific plots with descriptions
-- **👥 Team Integration**: All team members properly credited
-- **📈 Interactive**: Dynamic plot and section selection
+- ** Auto-Detection**: Automatically finds and loads all notebooks from base directory
+- ** Smart Rendering**: Only displays sections containing visualizations
+- ** Plot Selection**: Dropdown to select specific plots with descriptions
+- ** Team Integration**: All team members properly credited
+- ** Interactive**: Dynamic plot and section selection
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Navigate to project directory
@@ -23,7 +23,7 @@ streamlit run enhanced_streamlit_dashboard.py
 
 Dashboard opens at: `http://localhost:8501`
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 uidai/
@@ -36,12 +36,12 @@ uidai/
 ├── fraud_detection_analysis.ipynb
 ├── Rural_Urban_Adoption_Analysis.ipynb
 ├── district_anomaly_detection.ipynb
-├── enhanced_streamlit_dashboard.py ⭐
+├── enhanced_streamlit_dashboard.py 
 ├── biometric_analysis_enhanced.py
 └── README.md
 ```
 
-## 👥 Team Members
+##  Team Members
 
 | Analyst | Analysis |
 |---------|----------|
@@ -51,7 +51,7 @@ uidai/
 | **Shivansh Bhageria** | Rural vs Urban Adoption |
 | **Kartikeya Gupta** | District-level Hotspots |
 
-## 📊 Analysis Features
+##  Analysis Features
 
 ### 1. Biometric Failure Analysis
 - Failure pattern detection
@@ -79,7 +79,7 @@ uidai/
 - Performance metrics
 - Hotspot identification
 
-## 🎯 How It Works
+##  How It Works
 
 1. **Auto-Detection**: Dashboard scans base directory for notebooks
 2. **Section Parsing**: Extracts sections containing plots
@@ -87,14 +87,14 @@ uidai/
 4. **Plot Selection**: Dropdown to choose specific plots
 5. **Description**: Displays markdown text following each plot
 
-## 📈 Usage
+##  Usage
 
 1. **Select Feature** from sidebar dropdown
 2. **Choose Section** containing the analysis you want
 3. **Select Plot** from available visualizations
 4. **Read Description** below the plot
 
-## 🛠️ Installation
+##  Installation
 
 ```bash
 # Install dependencies
@@ -104,7 +104,7 @@ pip install streamlit pandas plotly numpy jupyter
 streamlit run enhanced_streamlit_dashboard.py
 ```
 
-## 📊 Data Schema
+##  Data Schema
 
 ### Biometric Data
 - `date`, `state`, `district`, `pincode`
@@ -120,7 +120,7 @@ streamlit run enhanced_streamlit_dashboard.py
 - `date`, `state`, `district`, `pincode`
 - `age_0_5`, `age_5_17`, `age_18_greater`: Age-wise enrollments
 
-## 🎨 Dashboard Features
+##  Dashboard Features
 
 - **Dashboard Overview**: Key metrics and quick insights
 - **Auto-Loading**: No manual file uploads needed
@@ -128,21 +128,21 @@ streamlit run enhanced_streamlit_dashboard.py
 - **Section Navigation**: Jump to relevant analysis sections
 - **Team Credits**: All analysts properly acknowledged
 
-## 📝 Notes
+##  Notes
 
 - Place all `.ipynb` files in the base directory
 - Dashboard automatically detects and loads them
 - Only sections with plots are displayed
 - Descriptions follow each visualization
 
-## 🆘 Support
+##  Support
 
 For issues or questions, contact the team members listed above.
 
-## 📄 License
+##  License
 
 MIT License
 
 ---
 
-**Built with ❤️ by the UIDAI Analytics Team**
+**Built with  by the UIDAI Analytics Team**

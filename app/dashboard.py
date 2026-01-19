@@ -23,7 +23,7 @@ NOTEBOOK_MAP = {
         "analyst": "Paras",
         "description": "Analyzes biometric capture failures across different demographics, geographic regions, and time periods. Identifies patterns in authentication failures and equipment-related issues to improve enrollment success rates."
     },
-    "Resource_Allocation_Optimization_with_descriptions.ipynb": {
+    "Resource_Allocation_Optimization.ipynb": {
         "name": "📈 Resource Allocation Optimization", 
         "analyst": "Sriyansh Sharma",
         "description": "Optimizes resource distribution by analyzing enrollment demand patterns across states and districts. Provides insights into population distribution, monthly enrollment rates, and seasonal trends to guide infrastructure planning."
@@ -38,7 +38,7 @@ NOTEBOOK_MAP = {
         "analyst": "Shivansh Bhageria",
         "description": "Compares Aadhaar enrollment patterns between rural and urban areas to understand the digital divide. Analyzes demographic trends, biometric authentication rates, and time-series patterns to assess adoption disparities."
     },
-    "district_anomaly_detection_with_descriptions.ipynb": {
+    "district_anomaly_detection.ipynb": {
         "name": "📍 District-level Hotspots", 
         "analyst": "Kartikeya Gupta",
         "description": "Identifies geographic hotspots with unusual enrollment patterns at the district level. Detects anomalies in enrollment ratios and provides descriptive statistics to highlight areas requiring policy intervention."
@@ -49,8 +49,8 @@ def find_notebooks():
     """Auto-detect notebooks in base directory"""
     notebooks = {}
     for filename, info in NOTEBOOK_MAP.items():
-        if os.path.exists(filename):
-            notebooks[info["name"]] = {"file": filename, "analyst": info["analyst"]}
+        if os.path.exists(f'analysis_notebooks/{filename}'):
+            notebooks[info["name"]] = {"file": f'analysis_notebooks/{filename}', "analyst": info["analyst"]}
     return notebooks
 
 def parse_notebook(notebook_path):
