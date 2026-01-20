@@ -1,0 +1,30 @@
+# Core Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Web Application (Streamlit Dashboard)
+streamlit>=1.30.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# Jupyter Notebook Support (for interactive analysis notebooks)
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+notebook>=7.0.0
+
+# Date/Time Utilities (included in Python standard library, but listed for clarity)
+# datetime - part of Python standard library
+
+# Additional utilities for data analysis
+# warnings - part of Python standard library
+# json - part of Python standard library
+# os - part of Python standard library
+# re - part of Python standard library
+# base64 - part of Python standard library
+# io - part of Python standard library
+# glob - part of Python standard library
