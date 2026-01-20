@@ -7,9 +7,15 @@ from datetime import date
 import glob
 import io
 from PIL import Image
+import streamlit.components.v1 as components
 
 
-st.set_page_config(page_title="UIDAI Analytics Dashboard", page_icon="🔎", layout="wide")
+st.set_page_config(
+    page_title="UIDAI Analytics Dashboard",
+    page_icon="app/UIDAI_logo.png",
+    layout="wide"
+)
+
 
 import base64
 
@@ -19,12 +25,25 @@ def load_font(path):
     return base64.b64encode(data).decode()
 
 font_base64 = load_font("fonts/Poppins/Poppins-Light.ttf")
+font_hindi_base64 = load_font("fonts/Poppins/Poppins-Medium.ttf")
+
+def load_svg_base64(path):
+    with open(path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+svg_base64 = load_svg_base64("app/UIDAI_logo.svg")
 
 st.markdown(f"""
 <style>
 @font-face {{
     font-family: "CustomFont";
     src: url(data:font/ttf;base64,{font_base64});
+}}
+
+@font-face {{
+    font-family: "HindiFont";
+    src: url(data:font/ttf;base64,{font_hindi_base64});
 }}
 
 /* Apply only to text elements */
@@ -97,7 +116,23 @@ img {
     border-radius: 12px !important;
     padding: 6px !important;
     background: white !important;
-    # box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+.uidai-logo {
+    display: block;
+    margin: auto;
+    width: 120px;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+.hindi-headline{
+    font-family: "HindiFont", sans-serif !important;     
+    margin-bottom: 2rem !important;  
 }
 </style>
 """, unsafe_allow_html=True)
@@ -221,9 +256,29 @@ feature = st.sidebar.selectbox("Select Analysis Feature:", features)
 
 # Dashboard Overview
 if feature == "Dashboard Overview":
-    # Main UI
-    st.markdown('<h2 class="notebook-header"> UIDAI-Data Analytics Dashboard</h2>', unsafe_allow_html=True)
-    
+    st.markdown(
+        f"""
+        <div style="text-align:center;">
+            <img src="data:image/svg+xml;base64,{svg_base64}" class="uidai-logo">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <h2 class="notebook-header" style="text-align:center;">
+            UIDAI-Data Analytics Dashboard
+        </h2>
+        <p class="hindi-headline" style="text-align:center; font-size:2rem; color:gray; margin-top:-8px;">
+            डेटा में अवसर, समाधान में क्रांति
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # --- Metrics Section ---
+
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("Total Enrollments", "12.5M", "2.3% ↑")
@@ -233,7 +288,9 @@ if feature == "Dashboard Overview":
         st.metric("Active Districts", "742", "5 ↑")
     with col4:
         st.metric("Biometric Quality", "96.8%", "0.5% ↑")
-    
+
+    # --- Insights ---
+
     st.markdown("### Quick Insights")
     col1, col2 = st.columns(2)
     with col1:
